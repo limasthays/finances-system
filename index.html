@@ -11,7 +11,7 @@
 <body>
 	<div class="layout-wrapper">
 		<div class="layout-container">
-			<aside class="navbar flex-column justify-content-start align-items-start bg-white shadow-sm rounded">
+			<aside id="menu-sidebar" class="navbar collapse collapse-horizontal flex-column justify-content-start align-items-start bg-white shadow-sm">
 				<div class="menu-container p-4">
 					<div>
 						<span class="fw-bold fs-2">
@@ -35,8 +35,14 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link d-flex gap-2" href="#">
-								<i class="bi bi-bar-chart-fill"></i>
+								<i class="bi bi-newspaper"></i>
 								Contas
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link d-flex gap-2" href="#">
+								<i class="bi bi-people-fill"></i>
+								Clientes
 							</a>
 						</li>
 					</ul>
@@ -46,8 +52,7 @@
 			<div class="layout-page d-flex flex-column gap-4 m-4">
 				<header class="d-flex align-items-center justify-content-between py-1 bg-white shadow-sm rounded">
 					<div class="d-flex align-items-center">
-						<button class="navbar-toggler p-3" data-bs-toggle="collapse"
-						data-bs-target="#menu-sidebar">
+						<button class="navbar-toggler p-3" data-bs-toggle="collapse" data-bs-target="#menu-sidebar">
 						<i class="bi bi-list"></i>                         
 					</button>
 					<h1 class="fs-3 m-0 fw-bold">Dashboard</h1>
