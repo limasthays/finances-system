@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/components/menu/style.css">
+	<link rel="stylesheet" href="assets/styles/notas-fiscais.css">
 	<title>Notas Fiscais | finsys</title>
 </head>
 <body>
@@ -18,7 +19,24 @@
 
 				<div class="content-wrapper">
 					<section class="bg-white shadow-sm p-3 rounded">
-						
+						<table class="table table-hover">
+							<thead>
+								<tr class="text-uppercase table-col-title">
+									<th scope="col">#id</th>
+									<th scope="col">pagador</th>
+									<th scope="col">valor total</th>
+									<th scope="col">status</th>
+									<th scope="col">data de emissão</th>
+									<th scope="col">data de cobrança</th>
+									<th scope="col">data de vencimento</th>
+									<th scope="col">data de pagamento</th>
+									<th scope="col">arquivos</th>
+								</tr>
+							</thead>
+							<tbody class="invoices-table">
+										
+							</tbody>
+						</table>
 					</section>
 				</div>
 			</div>
@@ -30,5 +48,7 @@
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/scripts/getLayout.js"></script>
+	<script src="assets/data/data.js"></script>
+	<script src="assets/components/invoices-table/tableBuilder.js"></script>
 </body>
 </html>
