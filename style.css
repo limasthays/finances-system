@@ -7,23 +7,10 @@ body{
 	background-color: #f5f5f9;
 }
 
-.menu-container{
-	min-width: 260px;
-}
-
-.layout-wrapper{
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
 
 .layout-container{
 	width: 100%;
 	display: flex;
 	align-items: stretch;
 	min-height: 100vh;
-}
-
-.logo-icon{
-	color: var(--bs-indigo);
 }

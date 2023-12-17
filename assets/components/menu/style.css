@@ -1,0 +1,11 @@
+.menu-container{
+	min-width: 260px;
+}
+
+.logo-icon{
+	color: var(--bs-indigo);
+}
+
+#menu-sidebar{
+	height: 100%;
+}
