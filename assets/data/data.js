@@ -521,11 +521,11 @@ const data = [
     "pagador": "loja roxa",
     "chave_de_acesso": "35230144333497000135550010000002311800700080",
     "emissao": "01/10/2023",
-    "cobranca": "05/10/2023",
-    "vencimento": "12/10/2023",
-    "pagamento": "26/10/2023",
+    "cobranca": "",
+    "vencimento": "",
+    "pagamento": "",
     "valor": "5344.00",
-    "status": "paga"
+    "status": "emitida"
   },
   {
     "id": "2310004",
