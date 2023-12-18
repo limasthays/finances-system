@@ -26,22 +26,22 @@ const data = [
     "pagador": "loja roxa",
     "chave_de_acesso": "33230134849096000189550010000000161591173139",
     "emissao": "01/01/2023",
-    "cobranca": "03/01/2023",
-    "vencimento": "20/01/2023",
-    "pagamento": "25/01/2023",
+    "cobranca": "",
+    "vencimento": "",
+    "pagamento": "",
     "valor": "59570.51",
-    "status": "paga"
+    "status": "emitida"
   },
   {
     "id": "2301004",
     "pagador": "loja rosa",
     "chave_de_acesso": "42230107432517001847550030007558911000105181",
     "emissao": "01/01/2023",
-    "cobranca": "11/01/2023",
-    "vencimento": "26/01/2023",
+    "cobranca": "",
+    "vencimento": "",
     "pagamento": "",
     "valor": "1818.78",
-    "status": "vencida"
+    "status": "emitida"
   },
   {
     "id": "2301005",
@@ -103,33 +103,33 @@ const data = [
     "pagador": "loja verde",
     "chave_de_acesso": "33230101226416000195550010000594431584575097",
     "emissao": "01/02/2023",
-    "cobranca": "15/02/2023",
-    "vencimento": "28/02/2023",
-    "pagamento": "25/02/2023",
+    "cobranca": "",
+    "vencimento": "",
+    "pagamento": "",
     "valor": "4655.80",
-    "status": "paga"
+    "status": "emitida"
   },
   {
     "id": "2303001",
     "pagador": "loja azul",
     "chave_de_acesso": "35230141068389000194550010000003151220140003",
     "emissao": "01/03/2023",
-    "cobranca": "06/03/2023",
-    "vencimento": "17/03/2023",
-    "pagamento": "22/03/2023",
+    "cobranca": "",
+    "vencimento": "",
+    "pagamento": "",
     "valor": "7644.88",
-    "status": "paga"
+    "status": "emitida"
   },
   {
     "id": "2303002",
     "pagador": "loja roxa",
     "chave_de_acesso": "33230101226416000195550010000594451565712720",
     "emissao": "01/03/2023",
-    "cobranca": "10/03/2023",
-    "vencimento": "23/03/2023",
+    "cobranca": "",
+    "vencimento": "",
     "pagamento": "",
     "valor": "4840.01",
-    "status": "vencida"
+    "status": "emitida"
   },
   {
     "id": "2303003",
@@ -565,22 +565,22 @@ const data = [
     "pagador": "loja azul",
     "chave_de_acesso": "51230133855749000170550030000124051576578308",
     "emissao": "01/11/2023",
-    "cobranca": "16/11/2023",
-    "vencimento": "20/11/2023",
-    "pagamento": "22/11/2023",
+    "cobranca": "",
+    "vencimento": "",
+    "pagamento": "",
     "valor": "295.09",
-    "status": "paga"
+    "status": "emitida"
   },
   {
     "id": "2311003",
     "pagador": "loja rosa",
     "chave_de_acesso": "31230116907746000113558900366441821605904740",
     "emissao": "01/11/2023",
-    "cobranca": "03/11/2023",
-    "vencimento": "20/11/2023",
-    "pagamento": "22/11/2023",
+    "cobranca": "",
+    "vencimento": "",
+    "pagamento": "",
     "valor": "296.10",
-    "status": "paga"
+    "status": "emitida"
   },
   {
     "id": "2311004",
@@ -620,11 +620,11 @@ const data = [
     "pagador": "loja verde",
     "chave_de_acesso": "53230190347840000622550000002810221180312902",
     "emissao": "01/12/2023",
-    "cobranca": "14/12/2023",
-    "vencimento": "20/12/2023",
+    "cobranca": "",
+    "vencimento": "",
     "pagamento": "",
     "valor": "374.50",
-    "status": "cobrada"
+    "status": "emitida"
   },
   {
     "id": "2312003",
