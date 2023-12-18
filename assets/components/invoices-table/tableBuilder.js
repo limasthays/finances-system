@@ -4,7 +4,7 @@ function tableBuilder(arrayData){
 		table.append(
 			`<tr class="invoice-item">
 			<th scope="row">${item.id}</th>
-			<td>${item.pagador}</td>
+			<td class="text-capitalize">${item.pagador}</td>
 			<td>${item.valor}</td>
 			<td>${item.status}</td>
 			<td class="emission-date">${item.emissao}</td>
