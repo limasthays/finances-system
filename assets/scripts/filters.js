@@ -2,6 +2,7 @@ $("#emission-month-filter").on("change", function() {
 	$("#charge-month-filter").val("")
 	$("#payment-month-filter").val("")
 	$("#status-filter").val("")
+	$("#payer-filter").val("")
 
   const selectedMonth = $(this).val() 
 
@@ -22,6 +23,7 @@ $("#charge-month-filter").on("change", function() {
 	$("#emission-month-filter").val("")
 	$("#payment-month-filter").val("")
 	$("#status-filter").val("")
+	$("#payer-filter").val("")
 
   const selectedMonth = $(this).val()
 
@@ -42,6 +44,7 @@ $("#payment-month-filter").on("change", function() {
 	$("#emission-month-filter").val("")
 	$("#charge-month-filter").val("")
 	$("#status-filter").val("")
+	$("#payer-filter").val("")
 
   const selectedMonth = $(this).val()
 
@@ -62,12 +65,32 @@ $("#status-filter").on("change", function() {
 	$("#emission-month-filter").val("")
 	$("#charge-month-filter").val("")
 	$("#payment-month-filter").val("")
+	$("#payer-filter").val("")
 
 	const selectedStatus = $(this).val()
 
 	if(selectedStatus !== ""){
 		$(".status").each(function() {
 			if($(this).text() !== selectedStatus ){
+				$(this).closest(".invoice-item").hide()
+			} else {
+				$(this).closest(".invoice-item").show()
+			}
+		})
+	}
+})
+
+$("#payer-filter").on("change", function() {
+	$("#emission-month-filter").val("")
+	$("#charge-month-filter").val("")
+	$("#payment-month-filter").val("")
+	$("#status-filter").val("")
+
+	const selectedPayer = $(this).val()
+
+	if(selectedPayer !== ""){
+		$(".payer").each(function() {
+			if($(this).text().toLowerCase() !== selectedPayer ){
 				$(this).closest(".invoice-item").hide()
 			} else {
 				$(this).closest(".invoice-item").show()
