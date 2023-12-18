@@ -6,6 +6,8 @@ const notChargedInvoices = dataWithParsedMoneyValues.filter(item => item.status 
 
 const expiredInvoices = dataWithParsedMoneyValues.filter(item => item.status === "vencida")
 
+const paidInvoices = dataWithParsedMoneyValues.filter(item => item.status === "paga")
+
 function adjustingNumber(number){
 	return Math.round(number * 100) / 100
 }
@@ -24,7 +26,7 @@ const thisMonth = dataWithParsedMoneyValues.filter(item => {
 	return splitedMonth === DECEMBER
 })
 
-const periodText = $("#current-period")
+
 
 const initialTotalNumber = dataWithParsedMoneyValues.map(item => {
 	return item.valor
@@ -47,8 +49,16 @@ const initialExpiredInvoicesNumber = expiredInvoices.map(item => {
 })
 $("#expired-invoices").text(`R$${initialExpiredInvoicesNumber}`)
 
+const initialPaidInvoicesNumber = paidInvoices.map(item => {
+	return item.valor
+}).reduce((acc, curr) => {
+	return adjustingNumber(acc + curr)
+})
+$("#paid-invoices").text(`R$${initialPaidInvoicesNumber}`)
+
 
 $("#total-invoices-selector").on("change", function(){
+	const periodText = $("#current-period")
 	const selectorValue = $(this).val()
 	
 	if(selectorValue === "ano"){
@@ -56,6 +66,7 @@ $("#total-invoices-selector").on("change", function(){
 		$("#total-invoices-value").text(`R$${initialTotalNumber}`)
 		$("#not-charged-invoices").text(`R$${initialNotChargedInvoicesNumber}`)
 		$("#expired-invoices").text(`R$${initialExpiredInvoicesNumber}`)
+		$("#paid-invoices").text(`R$${initialPaidInvoicesNumber}`)
 	}
 
 	if(selectorValue === "trimestre"){
@@ -78,8 +89,14 @@ $("#total-invoices-selector").on("change", function(){
 			return adjustingNumber(acc + curr)
 		})
 		$("#expired-invoices").text(`R$${quarterExpiredText}`)
-
 		
+		const quarterPaidText = quarterData.filter(item => item.status === "paga")
+		.map(item => item.valor)
+		.reduce((acc, curr) => {
+			return adjustingNumber(acc + curr)
+		})
+		$("#paid-invoices").text(`R$${quarterPaidText}`)
+
 	}
 
 	if(selectorValue === "mes"){
@@ -89,12 +106,12 @@ $("#total-invoices-selector").on("change", function(){
 		})
 		$("#total-invoices-value").text(`R$${thisMonthText}`)
 
-		const thisMonthNotCharged = thisMonth.filter(item => item.status === "emitida")
+		const notChargedThisMonth = thisMonth.filter(item => item.status === "emitida")
 		.map(item => item.valor)
 		.reduce((acc, curr) => {
 			return adjustingNumber(acc + curr)
 		})
-		$("#not-charged-invoices").text(`R$${thisMonthNotCharged}`)
+		$("#not-charged-invoices").text(`R$${notChargedThisMonth}`)
 		
 		const expiredThisMonth = thisMonth.filter(item => item.status === "vencida")
 		.map(item => item.valor)
@@ -103,6 +120,12 @@ $("#total-invoices-selector").on("change", function(){
 		})
 		$("#expired-invoices").text(`R$${expiredThisMonth}`)
 
+		const paidThisMonth = thisMonth.filter(item => item.status === "paga")
+		.map(item => item.valor)
+		.reduce((acc, curr) => {
+			return adjustingNumber(acc + curr)
+		})
+		$("#paid-invoices").text(`R$${paidThisMonth}`)
 
 	}
 
