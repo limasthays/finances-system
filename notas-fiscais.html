@@ -18,6 +18,27 @@
 				<div class="header" name="Notas Fiscais"></div>
 
 				<div class="content-wrapper">
+					<div class="filter-wrapper bg-white shadow-sm p-3 rounded mb-4">
+						<div class="filter">
+							<span>Filtrar por emissão de nota (mês/ano)</span>
+							<select id="emission-month-filter">
+								<option selected value="">Todos</option>
+								<option value="01">Janeiro</option>
+								<option value="02">Fevereiro</option>
+								<option value="03">Março</option>
+								<option value="04">Abril</option>
+								<option value="05">Maio</option>
+								<option value="06">Junho</option>
+								<option value="07">Julho</option>
+								<option value="08">Agosto</option>
+								<option value="09">Setembro</option>
+								<option value="10">Outubro</option>
+								<option value="11">Novembro</option>
+								<option value="12">Dezembro</option>
+							</select>
+						</div>					
+						
+					</div>
 					<section class="bg-white shadow-sm p-3 rounded">
 						<table class="table table-hover">
 							<thead>
@@ -50,5 +71,6 @@
 	<script src="assets/scripts/getLayout.js"></script>
 	<script src="assets/data/data.js"></script>
 	<script src="assets/components/invoices-table/tableBuilder.js"></script>
+	<script src="assets/scripts/filters.js"></script>
 </body>
 </html>
