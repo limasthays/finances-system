@@ -2,6 +2,8 @@ const dataWithParsedMoneyValues = data.map(item => {
 	return {...item, valor: parseFloat(item.valor)}
 })
 
+const notChargedInvoices = dataWithParsedMoneyValues.filter(item => item.status === "emitida")
+
 function adjustingNumber(number){
 	return Math.round(number * 100) / 100
 }
@@ -27,17 +29,23 @@ const initialTotalNumber = dataWithParsedMoneyValues.map(item => {
 }).reduce((acc, curr) => {
 	return adjustingNumber(acc + curr)
 })
-$(".total-value").text(`R$${initialTotalNumber}`)
+$("#total-invoices-value").text(`R$${initialTotalNumber}`)
 
-const initialNotChargedInvoicesValue = dataWithParsedMoneyValues.filter(item => item.status === "emitida")
-console.log(initialNotChargedInvoicesValue)
+const initialNotChargedInvoicesNumber = notChargedInvoices.map(item => {
+	return item.valor
+}).reduce((acc, curr) => {
+	return adjustingNumber(acc + curr)
+})
+$("#not-charged-invoices").text(`R$${initialNotChargedInvoicesNumber}`)
+
 
 $("#total-invoices-selector").on("change", function(){
 	const selectorValue = $(this).val()
 	
 	if(selectorValue === "ano"){
 		periodText.text("2023")
-		$(".total-value").text(`R$${initialTotalNumber}`)	
+		$("#total-invoices-value").text(`R$${initialTotalNumber}`)
+		$("#not-charged-invoices").text(`R$${initialNotChargedInvoicesNumber}`)
 	}
 
 	if(selectorValue === "trimestre"){
@@ -45,7 +53,14 @@ $("#total-invoices-selector").on("change", function(){
 		const quarterText = quarterData.map(item => item.valor).reduce((acc, curr) => {
 			return adjustingNumber(acc + curr)
 		})
-		$(".total-value").text(`R$${quarterText}`)	
+		$("#total-invoices-value").text(`R$${quarterText}`)
+
+		const quarterNotChargedText = quarterData.filter(item => item.status === "emitida")
+		.map(item => item.valor)
+		.reduce((acc, curr) => {
+			return adjustingNumber(acc + curr)
+		})
+		$("#not-charged-invoices").text(`R$${quarterNotChargedText}`)
 	}
 
 	if(selectorValue === "mes"){
@@ -53,7 +68,14 @@ $("#total-invoices-selector").on("change", function(){
 		const thisMonthText = thisMonth.map(item => item.valor).reduce((acc, curr) => {
 			return adjustingNumber(acc + curr)
 		})
-		$(".total-value").text(`R$${thisMonthText}`)	
+		$("#total-invoices-value").text(`R$${thisMonthText}`)
+
+		const thisMonthNotCharged = thisMonth.filter(item => item.status === "emitida")
+		.map(item => item.valor)
+		.reduce((acc, curr) => {
+			return adjustingNumber(acc + curr)
+		})
+		$("#not-charged-invoices").text(`R$${thisMonthNotCharged}`)
 	}
 
 })
