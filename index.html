@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/components/menu/style.css">
+	<link rel="stylesheet" href="assets/styles/dashboard.css">
 	<title>Dashboard | finsys</title>
 </head>
 
@@ -17,11 +18,35 @@
 			<div class="layout-page d-flex flex-column gap-4 m-4 w-100">
 				<div class="header" name="Dashboard"></div>
 
-				<div class="content-wrapper">
-					<section class="bg-white shadow-sm p-3 rounded">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel leo eget purus imperdiet blandit. Cras quis magna nec est posuere lacinia. Cras feugiat sagittis ipsum. Suspendisse auctor orci sit amet dolor dignissim, nec viverra erat pellentesque. Vivamus auctor libero sit amet tellus condimentum consequat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras risus neque, euismod non tortor dictum, vehicula ullamcorper velit. Nullam feugiat lorem a leo maximus, nec bibendum leo sollicitudin. In non volutpat tortor. Curabitur varius id nulla vitae sagittis. Sed ante lacus, sollicitudin sed tempus quis, semper at diam. Maecenas suscipit cursus metus eu maximus. Suspendisse id orci felis. Cras ac ornare enim, ac venenatis quam. Nulla sit amet felis sollicitudin, viverra sapien vel, mattis dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nisl lorem, tincidunt ut tristique maximus, pulvinar aliquam nisi. Donec et vestibulum erat, eget fringilla felis. Proin sollicitudin laoreet mauris. Duis facilisis non lacus ac porttitor. Aliquam consectetur aliquet iaculis. Nulla lacus velit, rhoncus eu dapibus eget, condimentum vel libero. Cras dignissim sapien at justo placerat iaculis. Nunc at nisl fermentum, finibus justo laoreet, tempus diam. Etiam et elit ligula. Etiam dapibus cursus lectus ac viverra. Aliquam dapibus odio erat, sit amet tempus lacus fringilla in. Aliquam placerat velit dui, vitae vulputate dui dictum ut. Quisque bibendum dui tristique aliquet molestie. Phasellus quis nunc quis felis lobortis placerat sit amet id metus. Nunc eu porttitor purus, vitae gravida enim. Nam enim nulla, lacinia sit amet rutrum eget, placerat eu lacus. Donec eros libero, dignissim eu augue quis, iaculis pulvinar sapien. Fusce varius nisi in libero bibendum, sed condimentum orci tincidunt. In condimentum tempor bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus elementum lobortis metus, non sodales tortor ultrices at. Cras et ipsum vitae massa tempus fringilla at ac nisl. Cras tincidunt massa quis augue suscipit, lobortis sodales neque vulputate.
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel leo eget purus imperdiet blandit. Cras quis magna nec est posuere lacinia. Cras feugiat sagittis ipsum. Suspendisse auctor orci sit amet dolor dignissim, nec viverra erat pellentesque. Vivamus auctor libero sit amet tellus condimentum consequat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras risus neque, euismod non tortor dictum, vehicula ullamcorper velit. Nullam feugiat lorem a leo maximus, nec bibendum leo sollicitudin. In non volutpat tortor. Curabitur varius id nulla vitae sagittis. Sed ante lacus, sollicitudin sed tempus quis, semper at diam. Maecenas suscipit cursus metus eu maximus. Suspendisse id orci felis. Cras ac ornare enim, ac venenatis quam. Nulla sit amet felis sollicitudin, viverra sapien vel, mattis dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed nisl lorem, tincidunt ut tristique maximus, pulvinar aliquam nisi. Donec et vestibulum erat, eget fringilla felis. Proin sollicitudin laoreet mauris. Duis facilisis non lacus ac porttitor. Aliquam consectetur aliquet iaculis. Nulla lacus velit, rhoncus eu dapibus eget, condimentum vel libero. Cras dignissim sapien at justo placerat iaculis. Nunc at nisl fermentum, finibus justo laoreet, tempus diam. Etiam et elit ligula. Etiam dapibus cursus lectus ac viverra. Aliquam dapibus odio erat, sit amet tempus lacus fringilla in. Aliquam placerat velit dui, vitae vulputate dui dictum ut. Quisque bibendum dui tristique aliquet molestie. Phasellus quis nunc quis felis lobortis placerat sit amet id metus. Nunc eu porttitor purus, vitae gravida enim. Nam enim nulla, lacinia sit amet rutrum eget, placerat eu lacus. Donec eros libero, dignissim eu augue quis, iaculis pulvinar sapien. Fusce varius nisi in libero bibendum, sed condimentum orci tincidunt. In condimentum tempor bibendum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus elementum lobortis metus, non sodales tortor ultrices at. Cras et ipsum vitae massa tempus fringilla at ac nisl. Cras tincidunt massa quis augue suscipit, lobortis sodales neque vulputate.
-					</section>
+				<div class="d-flex flex-column gap-3">
+						<div class="bg-white shadow-sm p-3 rounded">
+							<div class="d-flex">
+								<h3>Período: <span id="current-period">2023</span>
+								</h3>
+								<select id="total-invoices-selector" class="form-select" aria-label="Default select example">
+									<option selected value="ano">ano</option>
+									<option value="trimestre">trimestre</option>
+									<option value="mes">mês atual</option>
+								</select>
+							</div>
+					</div>
+
+						<section class="d-flex gap-3 bg-white shadow-sm p-3 rounded">
+							<!-- valor total -->
+								<div class="content-card">
+									<div class="d-flex flex-column">
+										<span class="fs-5">valor total</span>
+										<span class="total-value"></span>
+									</div>
+								</div>
+							<!-- emitida, não cobrada -->
+							<div class="content-card">
+								<div class="d-flex flex-column">
+									<span class="fs-5">Notas emitidas, mas não cobradas</span>
+									<span id="not-charged-invoices"></span>
+								</div>
+							</div>
+						</section>
 				</div>
 			</div>
 		</div>
@@ -32,6 +57,8 @@
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/scripts/getLayout.js"></script>
+	<script src="assets/data/data.js"></script>
+	<script src="assets/scripts/dashboardFilters.js"></script>
 </body>
 
 </html>
