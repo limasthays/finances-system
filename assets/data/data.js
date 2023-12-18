@@ -7,7 +7,7 @@ const data = [
     "cobranca": "02/01/2023",
     "vencimento": "04/01/2023",
     "pagamento": "03/01/2023",
-    "valor": "175,09",
+    "valor": "175.09",
     "status": "paga"
   },
   {
@@ -18,7 +18,7 @@ const data = [
     "cobranca": "02/01/2023",
     "vencimento": "06/01/2023",
     "pagamento": "",
-    "valor": "597,34",
+    "valor": "597.34",
     "status": "vencida"
   },
   {
@@ -29,7 +29,7 @@ const data = [
     "cobranca": "03/01/2023",
     "vencimento": "20/01/2023",
     "pagamento": "25/01/2023",
-    "valor": "59.570,51",
+    "valor": "59570.51",
     "status": "paga"
   },
   {
@@ -40,7 +40,7 @@ const data = [
     "cobranca": "11/01/2023",
     "vencimento": "26/01/2023",
     "pagamento": "",
-    "valor": "1.818,78",
+    "valor": "1818.78",
     "status": "vencida"
   },
   {
@@ -51,7 +51,7 @@ const data = [
     "cobranca": "02/01/2023",
     "vencimento": "17/01/2023",
     "pagamento": "17/01/2023",
-    "valor": "360,81",
+    "valor": "360.81",
     "status": "paga"
   },
   {
@@ -62,7 +62,7 @@ const data = [
     "cobranca": "06/02/2023",
     "vencimento": "14/02/2023",
     "pagamento": "",
-    "valor": "6.694,00",
+    "valor": "6694.00",
     "status": "vencida"
   },
   {
@@ -73,7 +73,7 @@ const data = [
     "cobranca": "06/02/2023",
     "vencimento": "16/02/2023",
     "pagamento": "14/02/2023",
-    "valor": "15.094,00",
+    "valor": "15094.00",
     "status": "paga"
   },
   {
@@ -84,7 +84,7 @@ const data = [
     "cobranca": "07/02/2023",
     "vencimento": "21/02/2023",
     "pagamento": "",
-    "valor": "4.077,00",
+    "valor": "4077.00",
     "status": "vencida"
   },
   {
@@ -95,7 +95,7 @@ const data = [
     "cobranca": "10/02/2023",
     "vencimento": "28/02/2023",
     "pagamento": "24/02/2023",
-    "valor": "10.397,00",
+    "valor": "10397.00",
     "status": "paga"
   },
   {
@@ -106,7 +106,7 @@ const data = [
     "cobranca": "15/02/2023",
     "vencimento": "28/02/2023",
     "pagamento": "25/02/2023",
-    "valor": "4.655,80",
+    "valor": "4655.80",
     "status": "paga"
   },
   {
@@ -117,7 +117,7 @@ const data = [
     "cobranca": "06/03/2023",
     "vencimento": "17/03/2023",
     "pagamento": "22/03/2023",
-    "valor": "7.644,88",
+    "valor": "7644.88",
     "status": "paga"
   },
   {
@@ -128,7 +128,7 @@ const data = [
     "cobranca": "10/03/2023",
     "vencimento": "23/03/2023",
     "pagamento": "",
-    "valor": "4.840,01",
+    "valor": "4840.01",
     "status": "vencida"
   },
   {
@@ -139,7 +139,7 @@ const data = [
     "cobranca": "12/03/2023",
     "vencimento": "29/03/2023",
     "pagamento": "23/03/2023",
-    "valor": "429,99",
+    "valor": "429.99",
     "status": "paga"
   },
   {
@@ -150,7 +150,7 @@ const data = [
     "cobranca": "13/03/2023",
     "vencimento": "31/03/2023",
     "pagamento": "28/03/2023",
-    "valor": "958,65",
+    "valor": "958.65",
     "status": "paga"
   },
   {
@@ -161,7 +161,7 @@ const data = [
     "cobranca": "15/03/2023",
     "vencimento": "29/03/2023",
     "pagamento": "",
-    "valor": "15.210,99",
+    "valor": "15210.99",
     "status": "vencida"
   },
   {
@@ -172,7 +172,7 @@ const data = [
     "cobranca": "19/04/2023",
     "vencimento": "26/04/2023",
     "pagamento": "",
-    "valor": "42.564,19",
+    "valor": "42564.19",
     "status": "paga"
   },
   {
@@ -183,7 +183,7 @@ const data = [
     "cobranca": "19/04/2023",
     "vencimento": "27/04/2023",
     "pagamento": "",
-    "valor": "4.783,38",
+    "valor": "4783.38",
     "status": "vencida"
   },
   {
@@ -194,7 +194,7 @@ const data = [
     "cobranca": "05/04/2023",
     "vencimento": "26/04/2023",
     "pagamento": "20/04/2023",
-    "valor": "57.907,32",
+    "valor": "57907.32",
     "status": "paga"
   },
   {
@@ -205,7 +205,7 @@ const data = [
     "cobranca": "05/04/2023",
     "vencimento": "28/04/2023",
     "pagamento": "26/04/2023",
-    "valor": "598,80",
+    "valor": "598.80",
     "status": "paga"
   },
   {
@@ -216,7 +216,7 @@ const data = [
     "cobranca": "28/04/2023",
     "vencimento": "30/04/2023",
     "pagamento": "30/04/2023",
-    "valor": "167,93",
+    "valor": "167.93",
     "status": "paga"
   },
   {
@@ -227,7 +227,7 @@ const data = [
     "cobranca": "15/05/2023",
     "vencimento": "31/05/2023",
     "pagamento": "31/05/2023",
-    "valor": "6.194,00",
+    "valor": "6194.00",
     "status": "paga"
   },
   {
@@ -238,7 +238,7 @@ const data = [
     "cobranca": "12/05/2023",
     "vencimento": "30/05/2023",
     "pagamento": "30/05/2023",
-    "valor": "507,55",
+    "valor": "507.55",
     "status": "paga"
   },
   {
@@ -249,7 +249,7 @@ const data = [
     "cobranca": "10/05/2023",
     "vencimento": "25/05/2023",
     "pagamento": "18/05/2023",
-    "valor": "58.135,08",
+    "valor": "58135.08",
     "status": "paga"
   },
   {
@@ -260,7 +260,7 @@ const data = [
     "cobranca": "05/05/2023",
     "vencimento": "27/05/2023",
     "pagamento": "24/05/2023",
-    "valor": "3.544,45",
+    "valor": "3544.45",
     "status": "paga"
   },
   {
@@ -271,7 +271,7 @@ const data = [
     "cobranca": "15/05/2023",
     "vencimento": "30/05/2023",
     "pagamento": "16/05/2023",
-    "valor": "419,33",
+    "valor": "419.33",
     "status": "paga"
   },
   {
@@ -282,7 +282,7 @@ const data = [
     "cobranca": "09/06/2023",
     "vencimento": "22/06/2023",
     "pagamento": "15/06/2023",
-    "valor": "580,10",
+    "valor": "580.10",
     "status": "paga"
   },
   {
@@ -293,7 +293,7 @@ const data = [
     "cobranca": "21/06/2023",
     "vencimento": "30/06/2023",
     "pagamento": "29/06/2023",
-    "valor": "877,32",
+    "valor": "877.32",
     "status": "paga"
   },
   {
@@ -304,7 +304,7 @@ const data = [
     "cobranca": "23/06/2023",
     "vencimento": "29/06/2023",
     "pagamento": "29/06/2023",
-    "valor": "1.007,70",
+    "valor": "1007.70",
     "status": "paga"
   },
   {
@@ -315,7 +315,7 @@ const data = [
     "cobranca": "26/06/2023",
     "vencimento": "30/06/2023",
     "pagamento": "27/06/2023",
-    "valor": "246,23",
+    "valor": "246.23",
     "status": "paga"
   },
   {
@@ -326,7 +326,7 @@ const data = [
     "cobranca": "17/06/2023",
     "vencimento": "23/06/2023",
     "pagamento": "29/06/2023",
-    "valor": "509,34",
+    "valor": "509.34",
     "status": "paga"
   },
   {
@@ -337,7 +337,7 @@ const data = [
     "cobranca": "16/06/2023",
     "vencimento": "21/06/2023",
     "pagamento": "28/06/2023",
-    "valor": "277,93",
+    "valor": "277.93",
     "status": "paga"
   },
   {
@@ -348,7 +348,7 @@ const data = [
     "cobranca": "21/07/2023",
     "vencimento": "31/07/2023",
     "pagamento": "28/07/2023",
-    "valor": "66.827,70",
+    "valor": "66827.70",
     "status": "paga"
   },
   {
@@ -359,7 +359,7 @@ const data = [
     "cobranca": "22/07/2023",
     "vencimento": "30/07/2023",
     "pagamento": "28/07/2023",
-    "valor": "66.827,70",
+    "valor": "66827.70",
     "status": "paga"
   },
   {
@@ -370,7 +370,7 @@ const data = [
     "cobranca": "17/07/2023",
     "vencimento": "26/07/2023",
     "pagamento": "",
-    "valor": "4.889,70",
+    "valor": "4889.70",
     "status": "vencida"
   },
   {
@@ -381,7 +381,7 @@ const data = [
     "cobranca": "19/07/2023",
     "vencimento": "24/07/2023",
     "pagamento": "26/07/2023",
-    "valor": "6.398,40",
+    "valor": "6398.40",
     "status": "paga"
   },
   {
@@ -392,7 +392,7 @@ const data = [
     "cobranca": "07/07/2023",
     "vencimento": "23/07/2023",
     "pagamento": "11/07/2023",
-    "valor": "13.774,76",
+    "valor": "13774.76",
     "status": "paga"
   },
   {
@@ -403,7 +403,7 @@ const data = [
     "cobranca": "01/08/2023",
     "vencimento": "26/08/2023",
     "pagamento": "16/08/2023",
-    "valor": "447,02",
+    "valor": "447.02",
     "status": "paga"
   },
   {
@@ -414,7 +414,7 @@ const data = [
     "cobranca": "10/08/2023",
     "vencimento": "16/08/2023",
     "pagamento": "17/08/2023",
-    "valor": "262,98",
+    "valor": "262.98",
     "status": "paga"
   },
   {
@@ -425,7 +425,7 @@ const data = [
     "cobranca": "10/08/2023",
     "vencimento": "22/08/2023",
     "pagamento": "25/08/2023",
-    "valor": "4.561,20",
+    "valor": "4561.20",
     "status": "paga"
   },
   {
@@ -436,7 +436,7 @@ const data = [
     "cobranca": "18/08/2023",
     "vencimento": "29/08/2023",
     "pagamento": "30/08/2023",
-    "valor": "229,21",
+    "valor": "229.21",
     "status": "paga"
   },
   {
@@ -447,7 +447,7 @@ const data = [
     "cobranca": "17/08/2023",
     "vencimento": "31/08/2023",
     "pagamento": "31/08/2023",
-    "valor": "499,44",
+    "valor": "499.44",
     "status": "paga"
   },
   {
@@ -458,7 +458,7 @@ const data = [
     "cobranca": "01/09/2023",
     "vencimento": "13/09/2023",
     "pagamento": "21/09/2023",
-    "valor": "375,06",
+    "valor": "375.06",
     "status": "paga"
   },
   {
@@ -469,7 +469,7 @@ const data = [
     "cobranca": "19/09/2023",
     "vencimento": "29/09/2023",
     "pagamento": "20/09/2023",
-    "valor": "229,64",
+    "valor": "229.64",
     "status": "paga"
   },
   {
@@ -480,7 +480,7 @@ const data = [
     "cobranca": "02/09/2023",
     "vencimento": "27/09/2023",
     "pagamento": "30/09/2023",
-    "valor": "4.138,65",
+    "valor": "4138.65",
     "status": "paga"
   },
   {
@@ -491,7 +491,7 @@ const data = [
     "cobranca": "22/09/2023",
     "vencimento": "25/09/2023",
     "pagamento": "23/09/2023",
-    "valor": "325,60",
+    "valor": "325.60",
     "status": "paga"
   },
   {
@@ -502,7 +502,7 @@ const data = [
     "cobranca": "22/09/2023",
     "vencimento": "24/09/2023",
     "pagamento": "28/09/2023",
-    "valor": "2.354,40",
+    "valor": "2354.40",
     "status": "paga"
   },
   {
@@ -513,7 +513,7 @@ const data = [
     "cobranca": "02/10/2023",
     "vencimento": "25/10/2023",
     "pagamento": "24/10/2023",
-    "valor": "335,02",
+    "valor": "335.02",
     "status": "paga"
   },
   {
@@ -524,7 +524,7 @@ const data = [
     "cobranca": "05/10/2023",
     "vencimento": "12/10/2023",
     "pagamento": "26/10/2023",
-    "valor": "5.344,00",
+    "valor": "5344.00",
     "status": "paga"
   },
   {
@@ -535,7 +535,7 @@ const data = [
     "cobranca": "13/10/2023",
     "vencimento": "19/10/2023",
     "pagamento": "31/10/2023",
-    "valor": "573,35",
+    "valor": "573.35",
     "status": "paga"
   },
   {
@@ -546,7 +546,7 @@ const data = [
     "cobranca": "18/10/2023",
     "vencimento": "24/10/2023",
     "pagamento": "25/10/2023",
-    "valor": "21.754,59",
+    "valor": "21754.59",
     "status": "paga"
   },
   {
@@ -557,7 +557,7 @@ const data = [
     "cobranca": "23/10/2023",
     "vencimento": "31/10/2023",
     "pagamento": "26/10/2023",
-    "valor": "380,01",
+    "valor": "380.01",
     "status": "paga"
   },
   {
@@ -568,7 +568,7 @@ const data = [
     "cobranca": "16/11/2023",
     "vencimento": "20/11/2023",
     "pagamento": "22/11/2023",
-    "valor": "295,09",
+    "valor": "295.09",
     "status": "paga"
   },
   {
@@ -579,7 +579,7 @@ const data = [
     "cobranca": "03/11/2023",
     "vencimento": "20/11/2023",
     "pagamento": "22/11/2023",
-    "valor": "296,10",
+    "valor": "296.10",
     "status": "paga"
   },
   {
@@ -590,7 +590,7 @@ const data = [
     "cobranca": "15/11/2023",
     "vencimento": "21/11/2023",
     "pagamento": "22/11/2023",
-    "valor": "4.030,35",
+    "valor": "4030.35",
     "status": "paga"
   },
   {
@@ -601,7 +601,7 @@ const data = [
     "cobranca": "13/11/2023",
     "vencimento": "22/11/2023",
     "pagamento": "30/11/2023",
-    "valor": "342,61",
+    "valor": "342.61",
     "status": "paga"
   },
   {
@@ -612,7 +612,7 @@ const data = [
     "cobranca": "17/12/2023",
     "vencimento": "31/12/2023",
     "pagamento": "15/12/2023",
-    "valor": "57.712,05",
+    "valor": "57712.05",
     "status": "paga"
   },
   {
@@ -623,7 +623,7 @@ const data = [
     "cobranca": "14/12/2023",
     "vencimento": "20/12/2023",
     "pagamento": "",
-    "valor": "374,50",
+    "valor": "374.50",
     "status": "cobrada"
   },
   {
@@ -634,7 +634,7 @@ const data = [
     "cobranca": "",
     "vencimento": "31/12/2023",
     "pagamento": "",
-    "valor": "64.887,65",
+    "valor": "64887.65",
     "status": "emitida"
   },
   {
@@ -645,7 +645,7 @@ const data = [
     "cobranca": "",
     "vencimento": "31/12/2023",
     "pagamento": "",
-    "valor": "101.442,35",
+    "valor": "101442.35",
     "status": "emitida"
   },
   {
@@ -656,7 +656,7 @@ const data = [
     "cobranca": "05/12/2023",
     "vencimento": "31/12/2023",
     "pagamento": "",
-    "valor": "360,15",
+    "valor": "360.15",
     "status": "cobrada"
   }
 ]
