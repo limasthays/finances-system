@@ -4,6 +4,8 @@ const dataWithParsedMoneyValues = data.map(item => {
 
 const notChargedInvoices = dataWithParsedMoneyValues.filter(item => item.status === "emitida")
 
+const expiredInvoices = dataWithParsedMoneyValues.filter(item => item.status === "vencida")
+
 function adjustingNumber(number){
 	return Math.round(number * 100) / 100
 }
@@ -38,6 +40,13 @@ const initialNotChargedInvoicesNumber = notChargedInvoices.map(item => {
 })
 $("#not-charged-invoices").text(`R$${initialNotChargedInvoicesNumber}`)
 
+const initialExpiredInvoicesNumber = expiredInvoices.map(item => {
+	return item.valor
+}).reduce((acc, curr) => {
+	return adjustingNumber(acc + curr)
+})
+$("#expired-invoices").text(`R$${initialExpiredInvoicesNumber}`)
+
 
 $("#total-invoices-selector").on("change", function(){
 	const selectorValue = $(this).val()
@@ -46,6 +55,7 @@ $("#total-invoices-selector").on("change", function(){
 		periodText.text("2023")
 		$("#total-invoices-value").text(`R$${initialTotalNumber}`)
 		$("#not-charged-invoices").text(`R$${initialNotChargedInvoicesNumber}`)
+		$("#expired-invoices").text(`R$${initialExpiredInvoicesNumber}`)
 	}
 
 	if(selectorValue === "trimestre"){
@@ -61,6 +71,15 @@ $("#total-invoices-selector").on("change", function(){
 			return adjustingNumber(acc + curr)
 		})
 		$("#not-charged-invoices").text(`R$${quarterNotChargedText}`)
+
+		const quarterExpiredText = quarterData.filter(item => item.status === "vencida")
+		.map(item => item.valor)
+		.reduce((acc, curr) => {
+			return adjustingNumber(acc + curr)
+		})
+		$("#expired-invoices").text(`R$${quarterExpiredText}`)
+
+		
 	}
 
 	if(selectorValue === "mes"){
@@ -76,6 +95,15 @@ $("#total-invoices-selector").on("change", function(){
 			return adjustingNumber(acc + curr)
 		})
 		$("#not-charged-invoices").text(`R$${thisMonthNotCharged}`)
+		
+		const expiredThisMonth = thisMonth.filter(item => item.status === "vencida")
+		.map(item => item.valor)
+		.reduce((acc, curr) => {
+			return adjustingNumber(acc + curr)
+		})
+		$("#expired-invoices").text(`R$${expiredThisMonth}`)
+
+
 	}
 
 })

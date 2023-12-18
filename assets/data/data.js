@@ -501,9 +501,9 @@ const data = [
     "emissao": "01/10/2023",
     "cobranca": "22/09/2023",
     "vencimento": "24/09/2023",
-    "pagamento": "28/09/2023",
+    "pagamento": "",
     "valor": "2354.40",
-    "status": "paga"
+    "status": "vencida"
   },
   {
     "id": "2310002",
@@ -576,11 +576,11 @@ const data = [
     "pagador": "loja rosa",
     "chave_de_acesso": "31230116907746000113558900366441821605904740",
     "emissao": "01/11/2023",
-    "cobranca": "",
+    "cobranca": "02/11/2023",
     "vencimento": "",
     "pagamento": "",
     "valor": "296.10",
-    "status": "emitida"
+    "status": "vencida"
   },
   {
     "id": "2311004",
@@ -620,11 +620,11 @@ const data = [
     "pagador": "loja verde",
     "chave_de_acesso": "53230190347840000622550000002810221180312902",
     "emissao": "01/12/2023",
-    "cobranca": "",
-    "vencimento": "",
+    "cobranca": "02/12/2023",
+    "vencimento": "03/12/2023",
     "pagamento": "",
     "valor": "374.50",
-    "status": "emitida"
+    "status": "vencida"
   },
   {
     "id": "2312003",
