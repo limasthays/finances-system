@@ -8,7 +8,7 @@ function tableBuilder(arrayData){
 			<td>${item.valor}</td>
 			<td>${item.status}</td>
 			<td class="emission-date">${item.emissao}</td>
-			<td>${item.cobranca}</td>
+			<td class="charge-date">${item.cobranca}</td>
 			<td>${item.vencimento}</td>
 			<td>${item.pagamento}</td>
 		</tr>`
