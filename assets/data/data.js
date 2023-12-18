@@ -611,9 +611,9 @@ const data = [
     "emissao": "01/12/2023",
     "cobranca": "17/12/2023",
     "vencimento": "31/12/2023",
-    "pagamento": "",
+    "pagamento": "15/12/2023",
     "valor": "57.712,05",
-    "status": "cobrada"
+    "status": "paga"
   },
   {
     "id": "2312002",
