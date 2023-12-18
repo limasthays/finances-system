@@ -160,9 +160,9 @@ const data = [
     "emissao": "01/03/2023",
     "cobranca": "15/03/2023",
     "vencimento": "29/03/2023",
-    "pagamento": "29/03/2023",
+    "pagamento": "",
     "valor": "15.210,99",
-    "status": "paga"
+    "status": "vencida"
   },
   {
     "id": "2304001",
@@ -369,9 +369,9 @@ const data = [
     "emissao": "01/07/2023",
     "cobranca": "17/07/2023",
     "vencimento": "26/07/2023",
-    "pagamento": "26/07/2023",
+    "pagamento": "",
     "valor": "4.889,70",
-    "status": "paga"
+    "status": "vencida"
   },
   {
     "id": "2307005",
