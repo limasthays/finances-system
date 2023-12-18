@@ -3,14 +3,14 @@ function tableBuilder(arrayData){
 	arrayData.forEach(item => {
 		table.append(
 			`<tr class="invoice-item">
-			<th scope="row">${item.id}</th>
-			<td class="text-capitalize payer">${item.pagador}</td>
-			<td>${item.valor}</td>
-			<td class="status">${item.status}</td>
-			<td class="emission-date">${item.emissao}</td>
-			<td class="charge-date">${item.cobranca}</td>
-			<td>${item.vencimento}</td>
-			<td class="payment-date">${item.pagamento}</td>
+			<th scope="row" title="id da nota fiscal">${item.id}</th>
+			<td class="text-capitalize payer" title="pagador">${item.pagador}</td>
+			<td title="valor total">${item.valor}</td>
+			<td class="status" title="status da nota fiscal">${item.status}</td>
+			<td class="emission-date" title="data de emissão">${item.emissao}</td>
+			<td class="charge-date" title="data de cobrança">${item.cobranca}</td>
+			<td title="data de vencimento">${item.vencimento}</td>
+			<td class="payment-date" title="data de pagamento">${item.pagamento}</td>
 		</tr>`
 		)
 	})
