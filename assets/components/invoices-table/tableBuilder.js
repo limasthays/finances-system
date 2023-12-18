@@ -6,7 +6,7 @@ function tableBuilder(arrayData){
 			<th scope="row">${item.id}</th>
 			<td class="text-capitalize">${item.pagador}</td>
 			<td>${item.valor}</td>
-			<td>${item.status}</td>
+			<td class="status">${item.status}</td>
 			<td class="emission-date">${item.emissao}</td>
 			<td class="charge-date">${item.cobranca}</td>
 			<td>${item.vencimento}</td>
