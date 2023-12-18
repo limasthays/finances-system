@@ -1,5 +1,6 @@
 $("#emission-month-filter").on("change", function() {
 	$("#charge-month-filter").val("")
+	$("#payment-month-filter").val("")
 
   const selectedMonth = $(this).val() 
 
@@ -13,12 +14,12 @@ $("#emission-month-filter").on("change", function() {
         $(this).closest(".invoice-item").show()
       }
     })
-	}
-  
+	}  
 })
 
 $("#charge-month-filter").on("change", function() {
 	$("#emission-month-filter").val("")
+	$("#payment-month-filter").val("")
 
   const selectedMonth = $(this).val()
 
@@ -33,7 +34,25 @@ $("#charge-month-filter").on("change", function() {
       }
     })
 	}
-  
+})
+
+$("#payment-month-filter").on("change", function() {
+	$("#emission-month-filter").val("")
+	$("#charge-month-filter").val("")
+
+  const selectedMonth = $(this).val()
+
+	if(selectedMonth !== ""){
+		$(".payment-date").each(function() {
+      const splited = $(this).text().split("/")[1]
+
+      if (splited !== selectedMonth) {
+        $(this).closest(".invoice-item").hide()
+      } else {
+        $(this).closest(".invoice-item").show()
+      }
+    })
+	}
 })
 
 
