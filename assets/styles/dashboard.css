@@ -3,7 +3,6 @@
 	width: fit-content;
 	padding: 1rem;
 	display: flex;
-	/* flex-direction: column; */
 }
 
 .form-select{

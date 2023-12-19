@@ -17,93 +17,101 @@
 			<div class="layout-page d-flex flex-column gap-4 m-4 w-100">
 				<div class="header" name="Notas Fiscais"></div>
 
-				<div class="content-wrapper">
-					<div class="filter-wrapper bg-white shadow-sm p-3 rounded mb-4">
-						<!-- filtro por emissão -->
-						<div class="filter">
-							<span>Filtrar por emissão (mês/2023)</span>
-							<select id="emission-month-filter">
-								<option selected value="">Todos</option>
-								<option value="01">Janeiro</option>
-								<option value="02">Fevereiro</option>
-								<option value="03">Março</option>
-								<option value="04">Abril</option>
-								<option value="05">Maio</option>
-								<option value="06">Junho</option>
-								<option value="07">Julho</option>
-								<option value="08">Agosto</option>
-								<option value="09">Setembro</option>
-								<option value="10">Outubro</option>
-								<option value="11">Novembro</option>
-								<option value="12">Dezembro</option>
-							</select>
-						</div>	
+				<div class="content-wrapper d-flex flex-column gap-4">
 
-						<!-- filtro por cobrança -->
-						<div class="filter">
-							<span>Filtrar por cobrança (mês/2023)</span>
-							<select id="charge-month-filter">
-								<option selected value="">Todos</option>
-								<option value="01">Janeiro</option>
-								<option value="02">Fevereiro</option>
-								<option value="03">Março</option>
-								<option value="04">Abril</option>
-								<option value="05">Maio</option>
-								<option value="06">Junho</option>
-								<option value="07">Julho</option>
-								<option value="08">Agosto</option>
-								<option value="09">Setembro</option>
-								<option value="10">Outubro</option>
-								<option value="11">Novembro</option>
-								<option value="12">Dezembro</option>
-							</select>
-						</div>
-						
-						<!-- filtro por pagamento -->
-						<div class="filter">
-							<span>Filtrar por pagamento (mês/2023)</span>
-							<select id="payment-month-filter">
-								<option selected value="">Todos</option>
-								<option value="01">Janeiro</option>
-								<option value="02">Fevereiro</option>
-								<option value="03">Março</option>
-								<option value="04">Abril</option>
-								<option value="05">Maio</option>
-								<option value="06">Junho</option>
-								<option value="07">Julho</option>
-								<option value="08">Agosto</option>
-								<option value="09">Setembro</option>
-								<option value="10">Outubro</option>
-								<option value="11">Novembro</option>
-								<option value="12">Dezembro</option>
-							</select>
-						</div>
+					<section class="bg-white shadow-sm rounded">					
+						<h4 class="mx-3 mt-3 mb-0 fw-bold">Filtros</h4>
+						<div class="filters-wrapper">
 
-						<!-- filtro por status -->
-						<div class="filter">
-							<span>Filtrar por status</span>
-							<select id="status-filter">
-								<option selected value="">Todos</option>
-								<option value="emitida">Nota emitida (emitida)</option>
-								<option value="cobrada">Cobrança realizada (cobrada)</option>
-								<option value="vencida">Pagamento em atraso (vencida)</option>
-								<option value="paga">Pagamento realizado (paga)</option>
-							</select>
-						</div>
+							<!-- filtro por emissão -->
+							<div class="filter d-flex flex-column">
+								<span class="fw-bold">Filtrar por emissão (mês/2023)</span>
+								<select id="emission-month-filter">
+									<option selected value="">Todos</option>
+									<option value="01">Janeiro</option>
+									<option value="02">Fevereiro</option>
+									<option value="03">Março</option>
+									<option value="04">Abril</option>
+									<option value="05">Maio</option>
+									<option value="06">Junho</option>
+									<option value="07">Julho</option>
+									<option value="08">Agosto</option>
+									<option value="09">Setembro</option>
+									<option value="10">Outubro</option>
+									<option value="11">Novembro</option>
+									<option value="12">Dezembro</option>
+								</select>
+							</div>	
 
-						<!-- filtro por pagador -->
-						<div class="filter">
-							<span>Filtrar por pagador</span>
-							<select id="payer-filter">
-								<option selected value="">Todos</option>
-								<option value="loja verde">Loja Verde</option>
-								<option value="loja azul">Loja Azul</option>
-								<option value="loja roxa">Loja Roxa</option>
-								<option value="loja rosa">Loja Rosa</option>
-							</select>
+							<!-- filtro por cobrança -->
+							<div class="filter d-flex flex-column">
+								<span class="fw-bold">Filtrar por cobrança (mês/2023)</span>
+								<select id="charge-month-filter">
+									<option selected value="">Todos</option>
+									<option value="01">Janeiro</option>
+									<option value="02">Fevereiro</option>
+									<option value="03">Março</option>
+									<option value="04">Abril</option>
+									<option value="05">Maio</option>
+									<option value="06">Junho</option>
+									<option value="07">Julho</option>
+									<option value="08">Agosto</option>
+									<option value="09">Setembro</option>
+									<option value="10">Outubro</option>
+									<option value="11">Novembro</option>
+									<option value="12">Dezembro</option>
+								</select>
+							</div>
+							
+							<!-- filtro por pagamento -->
+							<div class="filter d-flex flex-column">
+								<span class="fw-bold">Filtrar por pagamento (mês/2023)</span>
+								<select id="payment-month-filter">
+									<option selected value="">Todos</option>
+									<option value="01">Janeiro</option>
+									<option value="02">Fevereiro</option>
+									<option value="03">Março</option>
+									<option value="04">Abril</option>
+									<option value="05">Maio</option>
+									<option value="06">Junho</option>
+									<option value="07">Julho</option>
+									<option value="08">Agosto</option>
+									<option value="09">Setembro</option>
+									<option value="10">Outubro</option>
+									<option value="11">Novembro</option>
+									<option value="12">Dezembro</option>
+								</select>
+							</div>
+
+							<!-- filtro por status -->
+							<div class="filter d-flex flex-column">
+								<span class="fw-bold">Filtrar por status</span>
+								<select id="status-filter">
+									<option selected value="">Todos</option>
+									<option value="emitida">Nota emitida (emitida)</option>
+									<option value="cobrada">Cobrança realizada (cobrada)</option>
+									<option value="vencida">Pagamento em atraso (vencida)</option>
+									<option value="paga">Pagamento realizado (paga)</option>
+								</select>
+							</div>
+
+							<!-- filtro por pagador -->
+							<div class="filter d-flex flex-column">
+								<span class="fw-bold">Filtrar por pagador</span>
+								<select id="payer-filter">
+									<option selected value="">Todos</option>
+									<option value="loja verde">Loja Verde</option>
+									<option value="loja azul">Loja Azul</option>
+									<option value="loja roxa">Loja Roxa</option>
+									<option value="loja rosa">Loja Rosa</option>
+								</select>
+							</div>
+							
 						</div>
-						
-					</div>
+					</section>
+
+
+
 					<section class="bg-white shadow-sm p-3 rounded">
 						<table class="table table-hover">
 							<thead>

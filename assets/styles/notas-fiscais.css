@@ -3,7 +3,14 @@
 	font-size: 12px;
 }
 
-.filter-wrapper{
-	display: flex;
+.filters-wrapper{
+	font-size: 12px;
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+
+.filter{
+	padding: 1rem;
+}
+
 
