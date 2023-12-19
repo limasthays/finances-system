@@ -2,6 +2,23 @@
 	--bs-border-color: #566A7F;
 }
 
+.btn-primary {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #6610f2;
+	--bs-btn-border-color: #6610f2;
+	--bs-btn-hover-color: #6610f2;
+	--bs-btn-hover-bg: transparent;
+	--bs-btn-hover-border-color: #6610f2;
+	--bs-btn-focus-shadow-rgb: 49,132,253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #6610f2;
+	--bs-btn-active-border-color: #6610f2;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #6610f2;
+	--bs-btn-disabled-border-color: #6610f2;
+}
+
 .content-card{
 	width: fit-content;
 	padding: 1rem;
@@ -14,6 +31,12 @@
 	background-image: url("../svg/three-dots-vertical.svg");
 	width: fit-content;
 	height: fit-content;
+}
+
+.charts-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	font-size: 14px;
 }
 
 .canva-card{
