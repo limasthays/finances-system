@@ -1,17 +1,21 @@
+:root, [data-bs-theme=light] {
+	--bs-border-color: #566A7F;
+}
+
 .content-card{
-	background-color: rgb(207, 176, 233);
 	width: fit-content;
 	padding: 1rem;
 	display: flex;
+	background-color: #566a7f1a;
 }
 
 .form-select{
-	/* --bs-form-select-bg-img: none;
-	background-image: url("../svg/three-dots-vertical.svg"); */
+	--bs-form-select-bg-img: none;
+	background-image: url("../svg/three-dots-vertical.svg");
 	width: fit-content;
 	height: fit-content;
-	font-size: 12px;
-	padding: 6px;
+	/* font-size: 14px;
+	padding: 8px; */
 }
 
 .canva-card{

@@ -28,9 +28,10 @@
 					</div>
 				</div>
 
-				<div class="d-flex flex-column gap-3">
-						<div class="bg-white shadow-sm p-3 rounded">
-							<div class="d-flex">
+				
+				<section class="d-flex flex-column gap-3 bg-white shadow-sm p-3 rounded">
+						
+							<div class="d-flex gap-4">
 								<h3>Período: <span id="current-period">2023</span>
 								</h3>
 								<select id="total-invoices-selector" class="form-select" aria-label="Default select example">
@@ -39,40 +40,42 @@
 									<option value="mes">mês atual</option>
 								</select>
 							</div>
-					</div>
+					
+						<div class="d-flex gap-3">
+							<!-- paga -->
+							<div class="content-card rounded border border-1">
+								<div class="d-flex flex-column">
+									<span class="fs-5">Notas pagas</span>
+									<span id="paid-invoices"></span>
+								</div>
+							</div>
 
-						<section class="d-flex gap-3 bg-white shadow-sm p-3 rounded">
+							<!-- vencida -->
+							<div class="content-card rounded border border-1">
+								<div class="d-flex flex-column">
+									<span class="fs-5">Notas vencidas</span>
+									<span id="expired-invoices"></span>
+								</div>
+							</div>
+							
 							<!-- valor total -->
-								<div class="content-card">
+								<div class="content-card rounded border border-1">
 									<div class="d-flex flex-column">
-										<span class="fs-5">valor total das notas emitidas</span>
+										<span class="fs-5">Notas emitidas</span>
 										<span id="total-invoices-value"></span>
 									</div>
 								</div>
 							<!-- emitida, não cobrada -->
-							<div class="content-card">
+							<div class="content-card rounded border border-1">
 								<div class="d-flex flex-column">
-									<span class="fs-5">Notas emitidas, mas não cobradas</span>
+									<span class="fs-5">Notas não cobradas</span>
 									<span id="not-charged-invoices"></span>
 								</div>
 							</div>
-							<!-- vencida -->
-							<div class="content-card">
-								<div class="d-flex flex-column">
-									<span class="fs-5">Valor total das notas vencidas</span>
-									<span id="expired-invoices"></span>
-								</div>
-							</div>
-							<!-- paga -->
-							<div class="content-card">
-								<div class="d-flex flex-column">
-									<span class="fs-5">Valor total das notas pagas</span>
-									<span id="paid-invoices"></span>
-								</div>
-							</div>
 							
-						</section>
-				</div>
+							
+						</div>
+					</section>
 			</div>
 		</div>
 		
