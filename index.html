@@ -18,6 +18,16 @@
 			<div class="layout-page d-flex flex-column gap-4 m-4 w-100">
 				<div class="header" name="Dashboard"></div>
 
+				<!-- gráficos -->
+				<div class="d-flex gap-3 bg-white shadow-sm p-3 rounded" style="height: 200px;">
+					<div class="canva-card rounded p-2">
+						<canvas id="receita"></canvas>
+					</div>
+					<div class="canva-card rounded p-2">
+						<canvas id="dividas"></canvas>
+					</div>
+				</div>
+
 				<div class="d-flex flex-column gap-3">
 						<div class="bg-white shadow-sm p-3 rounded">
 							<div class="d-flex">
@@ -74,6 +84,9 @@
 	<script src="assets/scripts/getLayout.js"></script>
 	<script src="assets/data/data.js"></script>
 	<script src="assets/scripts/dashboardFilters.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="assets/components/charts/debtsChart.js"></script>
+	<script src="assets/components/charts/revenueChart.js"></script>
 </body>
 
 </html>
