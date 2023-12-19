@@ -11,6 +11,10 @@ function tableBuilder(arrayData){
 			<td class="charge-date" title="data de cobrança">${item.cobranca}</td>
 			<td title="data de vencimento">${item.vencimento}</td>
 			<td class="payment-date" title="data de pagamento">${item.pagamento}</td>
+			<td>
+				<a class="btn btn-outline-warning btn-sm text-uppercase" href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx">boleto</a>
+				<a class="btn btn-outline-info btn-sm text-uppercase" href="https://www.nfe.fazenda.gov.br/portal/consultaRecaptcha.aspx">nota fiscal</a>
+			</td>
 		</tr>`
 		)
 	})
