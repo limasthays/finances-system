@@ -4,11 +4,11 @@ Esta aplicação é uma página web que simula um sistema financeiro para contro
 
 ### 📋 Briefing
 Para esse desafio foi solicitado o uso das seguintes ferramentas:
-	- HTML;
-	- CSS;
-	- JavaScript;
-	- jQuery;
-	- Bootstrap.
+- HTML;
+- CSS;
+- JavaScript;
+- jQuery;
+- Bootstrap.
 
 Perto de ferramentas e frameworks modernos que costumo usar, ter como requisito usar ferramentas nativas ou obsoletas foi um desafio a parte. Ainda assim, foi divertido e ainda pude aprender outras formas de desenvolver.
 
